@@ -18,6 +18,14 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
+  <distributionManagement>
+   <snapshotRepository>
+      <id>snapshots</id>
+     <name>Internal Snapshot Release</name>
+     <url>http://13.127.189.205:8081/repository/maven-snapshots/</url>
+   </snapshotRepository>
+</distributionManagement> 
   <build>
     <pluginManagement>
       <plugins>
@@ -29,13 +37,6 @@
       </plugins>
     </pluginManagement>
     
-    <distributionManagement>
-   <snapshotRepository>
-      <id>snapshots</id>
-     <name>Internal Snapshot Release</name>
-     <url>http://13.127.189.205:8081/repository/maven-snapshots/</url>
-   </snapshotRepository>
-</distributionManagement> 
     <plugins>
       <plugin>
         <!-- Build an executable JAR -->
